@@ -1,66 +1,41 @@
-import ImageWithFallback from "@/components/ImageWithFallback";
+import PhoneShot from "@/components/PhoneShot";
 import { HowitworksList } from "@/lib/data";
 
 export default function HowItWorks() {
-    return (
-        <div className="container p-4 py-16 lg:p-16 lg:px-12" id='howitworks'>
-            <section className="flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-15 " id='howitworks'>
-                <div className="w-full lg:w-[348.97px] h-full order-last lg:order-first">
-                    <ImageWithFallback
-                        alt=""
-                        src="/images/how-it-works.png"
-                        fill
-                        // objectFit="fill"
-                        objectFit="contain"
-                        // classNameImage="w-full h-full"
-                        className="w-full h-[722px]"
-                    />
-                </div>
-                <div className="flex flex-col gap-9.5 pt-4 xl:ml-8">
-                    <div className="flex flex-col gap-4 lg:w-[600px]">
-                        <h2 className="text-3xl md:text-5xl font-agrandir font-bold text-primary2">Using Breedjr is super simple and easy</h2>
-                        <p
-                            className="text-primary3 font-graphik text-xl font-normal"
-                        >We handle the heavy lifting so you can relax. We help you conveniently convert crypto to your local currency and have it land exactly where you need it—your bank account.</p>
-
-                    </div>
-                    <div className="flex flex-col gap-9 w-full md:w-[600px]">
-                        {HowitworksList.map((item, index) =>
-                            <div className="flex gap-9 items-start w-full" key={index}>
-
-                                <p className="text-5xl font-agrandir text-primary4 font-bold">
-                                    {index + 1}
-                                </p>
-
-
-                                <div className="flex flex-col w-full">
-                                    <h3 className="text-2xl text-primary2 font-agrandir font-bold">
-                                        {item?.title}
-                                    </h3>
-                                    <p className="text-primary3 text-lg font-normal font-graphik">
-                                        {item?.subTitle}
-                                    </p>
-                                </div>
-
-                            </div>
-                        )}
-                    </div>
-                    {/* <div className="flex gap-8 items-center">
-                        <CustomButton
-                            supTitle='Get it on'
-                            title='Google Play'
-                            icon='/images/play-store.png'
-                            link='#'
-                        />
-                        <CustomButton
-                            supTitle='Download on'
-                            title='Apple Store'
-                            icon='/images/apple-store.png'
-                            link='#'
-                        />
-                    </div> */}
-                </div>
-            </section>
+  return (
+    <div className="container p-4 py-16 lg:p-16 lg:px-12" id="howitworks">
+      <section className="flex flex-col items-start justify-center gap-10 lg:flex-row lg:gap-15">
+        <div className="order-last flex h-full w-full items-center justify-center lg:order-first lg:w-[348.97px]">
+          <PhoneShot
+            src="/images/screens/home.png"
+            alt="Matrix app home"
+            bezel="lime"
+            className="w-[280px]"
+          />
         </div>
-    )
+        <div className="flex flex-col gap-9.5 pt-4 xl:ml-8">
+          <div className="flex flex-col gap-4 lg:w-[600px]">
+            <h2 className="font-agrandir text-3xl font-bold text-primary2 md:text-5xl">
+              Using Matrix is super simple and easy
+            </h2>
+            <p className="font-graphik text-xl font-normal text-primary3">
+              We handle the heavy lifting so you can relax. Pay light, buy data, and
+              top up airtime — tokens and bundles land where they should.
+            </p>
+          </div>
+          <div className="flex w-full flex-col gap-9 md:w-[600px]">
+            {HowitworksList.map((item, index) => (
+              <div className="flex w-full items-start gap-9" key={index}>
+                <p className="font-agrandir text-5xl font-bold text-primary4">{index + 1}</p>
+                <div className="flex w-full flex-col">
+                  <h3 className="font-agrandir text-2xl font-bold text-primary2">{item?.title}</h3>
+                  <p className="font-graphik text-lg font-normal text-primary3">{item?.subTitle}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }

@@ -2,16 +2,16 @@ import React from 'react'
 
 const Story = () => {
     return (
-        <section className='p-4 md:p-20 md:px-12 flex flex-col gap-8 lg:flex-row justify-between items-start'>
-            <h2 className='font-bold text-4xl font-graphik'>
+        <section className='flex flex-col items-start justify-between gap-8 p-4 md:p-20 md:px-12 lg:flex-row'>
+            <h2 className='font-graphik text-4xl font-bold'>
                 Our Story
             </h2>
-            <div className='max-w-[720px] flex flex-col gap-8'>
-                <p className=' text-xl font-medium font-graphik'>
-                    We believe that digital currencies should be more than just investments — they should be usable. That’s why we’ve built a secure, easy-to-use platform that helps people across Africa (and beyond) instantly convert their crypto into local currency, 24/7.
+            <div className='flex max-w-[720px] flex-col gap-8'>
+                <p className='font-graphik text-xl font-medium'>
+                    Paying light shouldn&apos;t mean a queue, a scratch card, or hoping the token arrives. We built Matrix so electricity, data, TV, and exam pins settle from one wallet — in the time it takes to unlock your phone.
                 </p>
-                <p className='text-xl font-medium font-graphik'>
-                    Whether you’re a freelancer getting paid in USDT, a trader managing crypto profits, or a small business accepting Bitcoin, Brredjr empowers you to unlock real-world value from your digital assets — in seconds.
+                <p className='font-graphik text-xl font-medium'>
+                    Your number is your account. Transfer from any Nigerian bank, save a meter once, and the next payment is just amount and PIN. Face ID if you want it. A human on the other end if something sticks.
                 </p>
             </div>
         </section>

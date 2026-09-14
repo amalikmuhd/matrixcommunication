@@ -1,55 +1,46 @@
 "use client";
 
 import CustomButton from "@/components/CustomButton";
-import ImageWithFallback from "@/components/ImageWithFallback";
-
+import PhoneShot, { HeroToasts } from "@/components/PhoneShot";
+import { STORE } from "@/lib/links";
 
 export default function Hero() {
-    // max-w-7xl
-    return (
-        // <section className="container">
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 px-4 sm:px-12 w-full h-full pt-20 items-end justify-between  lg:gap-12">
-            {/* <div className="flex flex-col lg:flex-row px-4 sm:px-12 w-full h-full items-end justify-between gap-12"> */}
-            <div className="flex flex-col gap-8 pt-10 lg:pt-18 h-full xl:h-[583px]">
-                <div className="flex flex-col gap-[5px] w-full xl:w-[555px]">
-                    <h1 className="text-6xl md:text-[64px] lg:text-[80px] font-agrandir font-bold text-foreground text-center md:text-left">
-                        Move from crypto to cash in minutes
-                    </h1>
-                    <p className="text-black text-2xl font-graphik font-normal text-center md:text-left">
-                        Convert Bitcoin, Ethereum, USDT and other cryptocurrencies to cash effortlessly—get paid instantly in local currency.
-                    </p>
-                </div>
-
-                <div className="flex flex-col md:flex-row gap-2.5 w-full items-center">
-                    <CustomButton
-                        supTitle='Get it on'
-                        title='Google Play'
-                        icon='/images/play-store.png'
-                        link='#'
-                    />
-                    <CustomButton
-                        supTitle='Download on'
-                        title='Apple Store'
-                        icon='/images/apple-store.png'
-                        link='#'
-                    />
-                </div>
-            </div>
-            <div className="  w-full h-[483px] lg:h-[583px] flex items-end justify-center">
-                <ImageWithFallback
-                    src="/images/heroImg.png"
-                    alt="Hero Image"
-                    // objectFit="cover"
-                    objectFit="fill"
-                    fill
-                    className="w-full h-full object-fill xl:object-cover"
-                // flex items-end justify-end
-                // className="w-full h-[649px]"
-                />
-            </div>
+  return (
+    <div className="grid h-full w-full grid-cols-1 items-end justify-between px-4 pt-20 sm:px-12 lg:grid-cols-2 lg:gap-12">
+      <div className="flex h-full flex-col gap-8 pt-10 lg:pt-18 xl:h-[583px]">
+        <div className="flex w-full flex-col gap-[5px] xl:w-[555px]">
+          <h1 className="text-center font-agrandir text-6xl font-bold text-foreground md:text-left md:text-[64px] lg:text-[80px]">
+            Light, data, TV. Sorted in seconds.
+          </h1>
+          <p className="text-center font-graphik text-2xl font-normal text-black md:text-left">
+            Pay electricity, airtime, data, cable, and exam pins from one wallet.
+            Your number is your account.
+          </p>
         </div>
-        // </section>
 
-    );
+        <div className="flex w-full flex-col items-center gap-2.5 md:flex-row">
+          <CustomButton
+            supTitle="Get it on"
+            title="Google Play"
+            icon="/images/play-store.png"
+            link={STORE.play}
+          />
+          <CustomButton
+            supTitle="Download on"
+            title="Apple Store"
+            icon="/images/apple-store.png"
+            link={STORE.apple}
+          />
+        </div>
+      </div>
+      <div className="relative flex w-full items-end justify-center pb-10 pt-8 lg:min-h-[640px]">
+        <HeroToasts />
+        <PhoneShot
+          src="/images/screens/home.png"
+          alt="Matrix home screen"
+          className="w-[220px] sm:w-[240px] lg:w-[250px]"
+        />
+      </div>
+    </div>
+  );
 }

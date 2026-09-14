@@ -50,7 +50,7 @@ const Content = () => {
                             className={cn(
                                 'block transition-colors w-fit py-3 px-6 text-base',
                                 activeId === section.id
-                                    ? 'text-[#553700] border-l-[3px] border-[#553700] font-semibold'
+                                    ? 'text-[#031B1C] border-l-[3px] border-[#A6EB2E] font-semibold'
                                     : 'text-[#667085] font-medium'
                             )}
                         >
@@ -68,21 +68,21 @@ const Content = () => {
                             Terms of use
                         </h1>
                         <p className='text-lg font-normal font-graphik text-[#475467]'>
-                            Published: 8th,Apr, 2024
+                            Published: 14 September 2026
                         </p>
 
                     </div>
                     <p className="text-[#434A5B] text-lg font-graphik font-normal mb-6">
                         Please read these Terms of Service (“Terms”) carefully as they contain important information about
-                        your legal rights, remedies, and obligations as guaranteed by Breedjr.Africa Limited (“Breedjr”,
-                        “we”, “us” or “our”). By accessing or using this website, our website application, and any of our
-                        services (altogether, “Breedjr” or the “Platform”), you agree to the terms and conditions below
+                        your legal rights, remedies, and obligations as guaranteed by Matrix (“Matrix”,
+                        “we”, “us” or “our”). By accessing or using this website, our mobile application, and any of our
+                        services (altogether, “Matrix” or the “Platform”), you agree to the terms and conditions below
                         (“Terms of Use” or “Terms”).
                     </p>
 
                     <p className="text-[#434A5B] text-lg font-graphik font-normal mb-6">
-                        You understand that your use of any of our services is also subject to Breedjr’s privacy notice, cookies
-                        policy, and acceptable use policy (collectively, the “Related Agreements). You are advised not to use
+                        You understand that your use of any of our services is also subject to Matrix’s privacy notice, cookies
+                        policy, and acceptable use policy (collectively, the “Related Agreements”). You are advised not to use
                         any of the services if you have any objections to any of these terms.
                     </p>
                     <p className="text-[#434A5B] text-lg font-graphik font-normal mb-6">
@@ -113,19 +113,15 @@ const Content = () => {
                             </div>
 
                             {section?.content?.map((text, i) => (
-                                <>
-                                    {
+                                <p key={i} className={cn("mb-6 text-lg  gap-4 font-graphik font-normal",
+                                    (section.title === 'Contact' ||
+                                        (section.title === 'General Information' && i === 1)
+                                    ) ? 'text-[#031B1C]' :
+                                        'text-[#434A5B]'
 
-                                        <p key={i} className={cn("mb-6 text-lg  gap-4 font-graphik font-normal",
-                                            (section.title === 'Contact' ||
-                                                (section.title === 'General Information' && i === 1)
-                                            ) ? 'text-[#553700]' :
-                                                'text-[#434A5B]'
-
-                                        )}>
-                                            {text}
-                                        </p>}
-                                </>
+                                )}>
+                                    {text}
+                                </p>
                             ))}
 
                             {section.subContent &&

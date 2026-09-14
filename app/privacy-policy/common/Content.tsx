@@ -50,7 +50,7 @@ const Content = () => {
                             className={cn(
                                 'block transition-colors w-fit py-3 px-6 text-base',
                                 activeId === section.id
-                                    ? 'text-[#553700] border-l-[3px] border-[#553700] font-semibold'
+                                    ? 'text-[#031B1C] border-l-[3px] border-[#A6EB2E] font-semibold'
                                     : 'text-[#667085] font-medium'
                             )}
                         >
@@ -86,19 +86,15 @@ const Content = () => {
                             </div>
 
                             {section?.content?.map((text, i) => (
-                                <>
-                                    {
+                                <p key={i} className={cn("mb-6 text-lg  gap-4 font-graphik font-normal",
+                                    (section.title === 'Contact' ||
+                                        (section.title === 'General Information' && i === 1)
+                                    ) ? 'text-[#031B1C]' :
+                                        'text-[#434A5B]'
 
-                                        <p key={i} className={cn("mb-6 text-lg  gap-4 font-graphik font-normal",
-                                            (section.title === 'Contact' ||
-                                                (section.title === 'General Information' && i === 1)
-                                            ) ? 'text-[#553700]' :
-                                                'text-[#434A5B]'
-
-                                        )}>
-                                            {text}
-                                        </p>}
-                                </>
+                                )}>
+                                    {text}
+                                </p>
                             ))}
 
                             {section.subContent &&

@@ -11,7 +11,7 @@ const CustomButton = ({ link, icon, supTitle, title }: {
     return (
         <Link
             href={link}
-            className='flex items-center justify-center md:justify-start rounded-[13.29px] py-8 px-5 gap-2.5 bg-[#000701] h-[62.01px] w-full md:w-[191.23px]'
+            className='flex items-center justify-center md:justify-start rounded-[13.29px] py-8 px-5 gap-2.5 bg-[#031B1C] h-[62.01px] w-full md:w-[191.23px]'
         >
 
             <Image src={icon}

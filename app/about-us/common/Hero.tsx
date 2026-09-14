@@ -3,10 +3,12 @@ export default function Hero() {
     return (
 
         <section className="h-full">
-            <div className="xl:w-[1070px] flex flex-col gap-7 items-center mx-auto text-white h-full justify-center">
-                <div className="text-center flex flex-col gap-6">
-                    <p className="text-black text-lg font-graphik font-black">ABOUT US</p>
-                    <h1 className="text-5xl lg:text-[70px] font-bold font-graphik text-black">Simplifying crypto-to-cash conversions for everyday users across Africa</h1>
+            <div className="mx-auto flex h-full flex-col items-center justify-center gap-7 text-white xl:w-[1070px]">
+                <div className="flex flex-col gap-6 text-center">
+                    <p className="font-graphik text-lg font-black text-black">ABOUT US</p>
+                    <h1 className="font-graphik text-5xl font-bold text-black lg:text-[70px]">
+                        Making everyday bills instant for people across Nigeria
+                    </h1>
                 </div>
             </div>
         </section>
