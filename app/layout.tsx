@@ -49,7 +49,7 @@ const graphik = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Matrix — Light, data, TV. Sorted in seconds.",
+  title: "Matrix Communications: Light, data, TV. Sorted in seconds.",
   description:
     "Pay electricity, airtime, data, cable TV, and exam pins from one Nigerian wallet. Your number is your account.",
 };
