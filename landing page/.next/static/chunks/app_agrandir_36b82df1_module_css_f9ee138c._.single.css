@@ -1,0 +1,35 @@
+/* [project]/app/agrandir_36b82df1.module.css [app-client] (css) */
+@font-face {
+  font-family: agrandir;
+  src: url("../media/Agrandir_Regular-s.p.c33bfd2b.otf") format("opentype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: agrandir;
+  src: url("../media/Agrandir_Bold-s.p.0106b177.otf") format("opentype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: agrandir Fallback;
+  src: local(Arial);
+  ascent-override: 70.34%;
+  descent-override: 23.45%;
+  line-gap-override: 28.14%;
+  size-adjust: 106.63%;
+}
+
+.agrandir_36b82df1-module__FxH3Ra__className {
+  font-family: agrandir, agrandir Fallback;
+}
+
+.agrandir_36b82df1-module__FxH3Ra__variable {
+  --font-agrandir: "agrandir", "agrandir Fallback";
+}
+
+/*# sourceMappingURL=app_agrandir_36b82df1_module_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,51 @@
+/* [project]/app/graphik_1ccd998.module.css [app-client] (css) */
+@font-face {
+  font-family: graphik;
+  src: url("../media/GraphikRegular-s.p.f7cb8810.otf") format("opentype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: graphik;
+  src: url("../media/GraphikMedium-s.p.eee5883d.otf") format("opentype");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: graphik;
+  src: url("../media/GraphikSemibold-s.p.5f1289af.otf") format("opentype");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: graphik;
+  src: url("../media/GraphikBold-s.p.1f1dadd6.otf") format("opentype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: graphik Fallback;
+  src: local(Arial);
+  ascent-override: 76.92%;
+  descent-override: 17.11%;
+  line-gap-override: 9.4%;
+  size-adjust: 106.34%;
+}
+
+.graphik_1ccd998-module__oHfujG__className {
+  font-family: graphik, graphik Fallback;
+}
+
+.graphik_1ccd998-module__oHfujG__variable {
+  --font-graphik: "graphik", "graphik Fallback";
+}
+
+/*# sourceMappingURL=app_graphik_1ccd998_module_css_f9ee138c._.single.css.map*/
