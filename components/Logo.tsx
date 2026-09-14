@@ -7,7 +7,7 @@ export default function Logo({ href = "/" }: { href?: string }) {
         M
       </span>
       <span className="font-agrandir text-[22px] font-bold tracking-tight text-[#031B1C]">
-        Matrix
+        Matrix Communications
       </span>
     </Link>
   );
